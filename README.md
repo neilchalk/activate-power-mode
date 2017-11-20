@@ -20,7 +20,11 @@ Or Settings ➔ Packages ➔ Search for `activate-power-mode`
 
 ## Usage
 
-Activate with <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>O</kbd> or through the command panel with `Activate Power Mode: Toggle`. Use the command again to deactivate.
+- Activate with <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>O</kbd> or through the command panel with `Activate Power Mode: Toggle`. Use the command again to deactivate.
+
+**IMPORTANT: When `Combo Mode` is enabled, particles and other effects won't appear until you reach the activation threshold.**
+
+- Reset the max combo streak with the command `Activate Power Mode: Reset Max Combo`
 
 ## Settings
 
@@ -30,7 +34,7 @@ Auto enable power mode on atom start.
 ### Combo Mode
 * **Enable/Disable**
 
-When enabled effects won't appear until reach the activation threshold.
+**When enabled effects won't appear until reach the activation threshold.**
 
 * Activation Threshold
 * Streak Timeout
@@ -40,6 +44,11 @@ When enabled effects won't appear until reach the activation threshold.
 ### Screen Shake
 * **Enable/Disable**
 * Intensity
+
+### Play Audio
+* **Enable/Disable**
+* Volume
+* Audioclip (Gun, Typewriter, Custom)
 
 ### Particles
 * **Enable/Disable**
@@ -53,3 +62,13 @@ With this option you can select if use the color at cursor position, random colo
 
 ### Excluded File Types
 * Array of file types to exclude
+
+### Plugins
+Here you can Enable/Disable the registered plugins.
+
+## Customize
+You can extend the basic functionality of this package by consuming the activate-power-mode service, with this you can register your own plugins, flows and canvas effects.
+
+Check it out in the [wiki](https://github.com/JoelBesada/activate-power-mode/wiki).
+
+If you only want to change the input logic, see the [user file flow](https://github.com/JoelBesada/activate-power-mode/wiki/Flow#user-file-flow) page.
